@@ -2,7 +2,7 @@
   "name": "underlayer",
   "version": "0.0.1",
   "description": "Underlayer is simple, layered and awesome front-end framework built for flexible web development.",
-  "main": "underlayer.styl",
+  "main": "./src/underlayer.styl",
   "directories": {
     "test": "test"
   },
@@ -33,6 +33,10 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-stylus": "^2.5.0",
     "gulp-util": "^3.0.7",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "rupture": "^0.6.1"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
   }
 }

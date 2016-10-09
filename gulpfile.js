@@ -30,7 +30,7 @@ gulp.task("build:css", function(){
         }))
         .on("error", errorHandler("stylus error"))
         .pipe(autoprefixer({
-            browsers: ["last 2 versions"],
+            browsers: ["last 10 versions"],
             cascade: false }))
         .pipe(sourcemaps.write("./"))
         .pipe(gulp.dest(options.test + "/css"))
@@ -58,6 +58,9 @@ gulp.task("test", ["build"], function() {
 
   // Watch app .styl files, changes are piped to browserSync
   gulp.watch(options.src + "/**/*.styl", ["build:css"]);
+
+  // Watch test html files
+  gulp.watch(options.test + "/**/*.html", ["build:css"]);
 });
 
 
