@@ -1,0 +1,28 @@
+{
+  "name": "underlayer",
+  "version": "0.0.1",
+  "description": "Underlayer is simple, layered and awesome front-end framework built for flexible web development.",
+  "main": "underlayer.styl",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stjepco/underlayer.git"
+  },
+  "keywords": [
+    "underlayer",
+    "front-end",
+    "framework",
+    "layered"
+  ],
+  "author": "Stjepan Grgić",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stjepco/underlayer/issues"
+  },
+  "homepage": "https://github.com/stjepco/underlayer#readme"
+}
