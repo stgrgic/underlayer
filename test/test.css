@@ -1,0 +1,19 @@
+
+body {
+    padding: 0 40px;
+}
+
+.test-title {
+    background-color: #f0fffa;
+    padding: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 30px 0 10px;
+    color: #0c8;
+}
+
+.box {
+    background-color: #f0fffa;
+    border: 1px solid #e0fff5;
+}

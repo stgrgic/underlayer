@@ -2,13 +2,39 @@
 // Typography
 //
 
-.test-title {
-    background-color #aca
-    font-size 14px
-    text-transform uppercase
-    display inline-block
-}
 
 body {
-    background-color #ccc
+    font-family $font-family-sans-serif
+    font-size inherit
+    font-weight 400
+    line-height $line-height-base
+    background-color $color__body-bg
+    
+    color $color__font
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family $headings-font-family
+  font-weight $headings-font-weight
+  line-height $headings-line-height
+  color $headings-color
+  margin-bottom 0.5rem
+}
+
+p{
+    margin-bottom 1.5rem
+    img {
+        // float left
+    }
+}
+
+blockquote {
+    margin 0
+    padding 0
+}
+
+figure {
+    margin 0
+    padding 0
 }

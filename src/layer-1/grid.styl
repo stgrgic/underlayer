@@ -1,6 +1,5 @@
 // Flex container
 .fc {
-    background-color #aaa
     display flex
     flex-direction row
     flex-wrap wrap
@@ -19,9 +18,7 @@ for size, value in ($containers) {
 
 // Box defaults
 .box {
-    background-color #aca
     padding 0 ($gutter/2)
-    border 1px solid #999
 }
 
 // I tried a lot of different ways of dealing
@@ -30,10 +27,10 @@ for size, value in ($containers) {
 
 for size, value in ($breakpoints) {
     +above(value) {
-        for num in ($grid-columns..1) {
-            .d{size}-{num} {
+        for column in ($grid-columns..1) {
+            .d{size}-{column} {
                .box {
-                   width (100/num)%
+                   width (100/column)%
                } 
             }
         }
