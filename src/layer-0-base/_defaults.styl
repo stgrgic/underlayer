@@ -1,10 +1,10 @@
 // ------------------------------
-// Layer-0 __ Reset
-//
+// Defautls
 // A lot of styles are copied from bootstrap 4.
+// Styles are setting some opinionated defaults
 // ------------------------------
 
-//Reset box sizing
+// Reset box sizing
 html {
     box-sizing border-box
     font-size $font-size-root
@@ -19,12 +19,23 @@ html {
         text-rendering optimizeLegibility
     }
 }
+// Thid appeared in chrome
+body {
+    margin 0
+    padding 0
+}
 
 *,
 *::before,
 *::after {
     box-sizing inherit
 }
+
+//
+// Reset HTML, body, and more
+//
+
+
 
 //
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
@@ -41,7 +52,12 @@ html {
 //
 
 // Remove top margins from headings
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin 0
 }
 
@@ -50,17 +66,18 @@ p {
     padding 0
 }
 
-ul,ol {
-    margin 0
-    padding 0
-    list-style-position inside
-}
-
-ul ul, ol ol {
+ul ul,
+ol ol {
     padding-left 2rem
 }
 
 img {
     vertical-align middle
+    max-width 100%
 }
 
+hr {
+    margin 1rem 0
+    border none
+    border-top 1px solid
+}

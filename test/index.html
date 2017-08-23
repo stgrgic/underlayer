@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/underlayer.css">
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <h1>Underlayer test file</h1>
@@ -22,9 +21,18 @@
     </div>
     <hr>
     <div class="test">
+        <div class="navbar-fixed">
+            <div class="flex-container fc-navbar">
+                <div class="box">box</div>
+                <div class="box push-right">box</div>
+                <div class="box">box</div>
+                <div class="box">box</div>
+                <div class="box">box</div>
+            </div>
+        </div>
         <div id="Grid">
         <!-- When writing dX(divide at X) always start with s (small size) eg. start with mobile sizes. Otherwise it will be broken  -->
-            <div class="fc wxl ds-1 dm-2 dxl-5">
+            <div class="flex-row above-s-3 above-m-6 above-xl-8">
                 <div class="box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit excepturi perferendis totam consequuntur a! Modi iure, dolorem sapiente in nostrum quia consectetur id. Nam et consequatur earum perferendis, labore.</p>
                 </div>
@@ -65,7 +73,7 @@
 
             <hr>
 
-            <div class="fc ds-7 dm-2 dxl-5">
+            <div class="flex-container ds-7 dm-2 dxl-5">
                 <div class="box">
                     box
                 </div>
