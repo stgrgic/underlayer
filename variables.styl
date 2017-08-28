@@ -1,8 +1,23 @@
-//
-// Variables
-//
+/*
+** Variables
+*/
 
-//------------------------------- Global Colors --------------
+// ----------- Typography -----------
+// Base font
+$font-size-root =   16px
+$line-height-base = 1.625
+$font-weight = 400
+
+//Fonts
+$font-family-sans-serif = "Helvetica Neue", "Arial", sans-serif
+$font-family-serif      = "Georgia", "Times New Roman", "Times", serif
+
+//Headnings
+$headings-font-family = $font-family-sans-serif
+$headings-font-weight = 700
+$headings-line-height = 1
+
+// ----------- Global Colors -----------
 $gray-dark =        #373a3c
 $gray =             #55595c
 $gray-light =       #818a91
@@ -18,25 +33,13 @@ $color__warning =   #f0ad4e
 $color__danger =    #d9534f
 
 
-//------------------------------- Typography -----------
-
-//Fonts
-$font-family-sans-serif = "Helvetica Neue", "Arial", sans-serif
-$font-family-serif      = "Georgia", "Times New Roman", "Times", serif
-
-//Headnings
-$headings-font-family = $font-family-sans-serif
-$headings-font-weight = 700
-$headings-line-height = 1
-
-//Base font
-$font-size-root =   16px
-$font-size-base =   1rem
-$line-height-base = 1.625
-$font-weight = 400
 
 
-//------------------------------- Body ------------------
+
+
+
+
+// ----------- Body -----------
 
 //Body
 $color__body-bg =    #fff
@@ -47,13 +50,13 @@ $color__font =       #4D4541
 $color__link =            $color__primary
 $color__link--hover =     darken($color__link, 15%)
 
-//------------------------------- Layout ----------------
+// ----------- Layout -----------
 
 $global-container = 1400px
 $nav-height =       60px
 
 
-//------------------------------- Grid ----------------
+// ----------- Grid -----------
 
 // breakpoints represent start point
 
@@ -81,7 +84,7 @@ $breakpoint = {
 $gutter = 30px
 $grid-columns = 12
 
-//------------------------------- Elements ----------------
+// ----------- Elements -----------
 // Z index
 $z-navbar = 999
 
@@ -89,7 +92,7 @@ $z-navbar = 999
 
 $navbar-height = 50px
 
-// -------------------------- Flex gird ----------------------
+// ----------- Flex gird -----------
 
 // Nije mnozina ali jebiga
 $flex-breakpoints = {
