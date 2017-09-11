@@ -1,11 +1,11 @@
-//
-// Mixins
-//
+/*
+** Utils
+*/
 
-//Clearfix
+// Clearfix
 // This way clearfix can be used as a class
 // and as a extend inide other class
-.cf {
+.clearfix {
     *zoom: 1;
     &:before, &:after {
         content: " ";
@@ -27,6 +27,8 @@ clearfix() {
     }
 }
 
+
+// Disable selection
 no-select(){
     -webkit-touch-callout: none
     -webkit-user-select: none
