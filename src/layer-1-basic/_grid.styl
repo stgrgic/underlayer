@@ -73,62 +73,62 @@
 
 // ----------------- flex grid
 
-.flex-row {
-    display flex
-    flex-direction row
-    flex-wrap wrap
-    width 100%
-    margin 0 auto
-    >.box {
-        padding 0 0.5rem
-        width 100%
-    }
-}
-.flex-column {
-    display flex
-    flex-direction column
-    flex-wrap wrap
-    width 100%
-    margin 0 auto
-    >.box {
-        // padding 15px 0
-        width 100%
-        flex 1 1 auto
-        &:not(:last-child){
-            margin-bottom 1rem
-        }
-    }
-}
+// .flex-row {
+//     display flex
+//     flex-direction row
+//     flex-wrap wrap
+//     width 100%
+//     margin 0 auto
+//     >.box {
+//         padding 0 0.5rem
+//         width 100%
+//     }
+// }
+// .flex-column {
+//     display flex
+//     flex-direction column
+//     flex-wrap wrap
+//     width 100%
+//     margin 0 auto
+//     >.box {
+//         // padding 15px 0
+//         width 100%
+//         flex 1 1 auto
+//         &:not(:last-child){
+//             margin-bottom 1rem
+//         }
+//     }
+// }
 
-.flex-row{
-    >.box {
-        margin-bottom 1rem
-    }
-}
+// .flex-row{
+//     >.box {
+//         margin-bottom 1rem
+//     }
+// }
 
-for breakpoint, pixels in ($flex-breakpoints) {
-    +above(pixels) {
-        for column in ($grid-columns..1) {
+// for breakpoint, pixels in ($flex-breakpoints) {
+//     +above(pixels) {
+//         for column in ($grid-columns..1) {
 
-            // Global divide class, that divides boxes iside container
-            .flex-row.above-{breakpoint}-divide-{column} {
-                > .box {
-                    width (100/column)%
-                }
-            }
-            // Width for individula column
-            .above-{breakpoint}-width-{column} {
-                width (100/($grid-columns/column))% !important
-                // padding-left 15px
-                // padding-right 15px
-            }
-        }
-    }
-}
+//             // Global divide class, that divides boxes iside container
+//             .flex-row.above-{breakpoint}-divide-{column} {
+//                 > .box {
+//                     width (100/column)%
+//                 }
+//             }
+//             // Width for individula column
+//             .above-{breakpoint}-width-{column} {
+//                 width (100/($grid-columns/column))% !important
+//                 // padding-left 15px
+//                 // padding-right 15px
+//             }
+//         }
+//     }
+// }
 
 
-.width-padding-fix {
-    margin 0 -15px
-    width calc(100% + 30px)
-}
+// .width-padding-fix {
+//     margin 0 -15px
+//     width calc(100% + 30px)
+// }
 
